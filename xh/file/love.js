@@ -57,9 +57,11 @@
         // y = 13 cos t - 5 cos 2t - 2 cos 3t - cos 4t
         // http://www.wolframalpha.com/input/?i=x+%3D+16+sin%5E3+t%2C+y+%3D+(13+cos+t+-+5+cos+2t+-+2+cos+3t+-+cos+4t)
         var points = [], x, y, t;
+        x=1;
+        y=1;
         for (var i = 10; i < 30; i += 0.2) {
             t = i / Math.PI;
-
+            
             points.push(new Point(x, y));
         }
         this.points = points;
